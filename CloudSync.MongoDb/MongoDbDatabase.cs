@@ -3,7 +3,7 @@ namespace CloudSync
     [Database("mongodb")]
     public class MongoDbDatabase : IDatabase
     {
-        public void Initialize(string connectionString)
+        public void Initialize(IConfig config)
         {
             // Initialize the database connection
             //throw new NotImplementedException();

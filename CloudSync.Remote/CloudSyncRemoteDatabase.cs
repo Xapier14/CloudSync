@@ -3,10 +3,10 @@
     [Database("cloudsync")]
     public class CloudSyncRemoteDatabase : IDatabase
     {
-        public void Initialize(string connectionString)
+        public void Initialize(IConfig config)
         {
 
-            Config.SharedDataStore["CLOUDSYNC_DATABASE_INIT", this] = true;
+            config.SharedDataStore["CLOUDSYNC_DATABASE_INIT", this] = true;
         }
 
         public IReadOnlyList<DataEntry> GetAllEntriesFromAppId(string appId)

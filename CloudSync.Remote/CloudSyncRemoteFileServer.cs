@@ -3,10 +3,10 @@
     [Database("cloudsync")]
     public class CloudSyncRemoteFileServer : IFileServer
     {
-        public void Initialize(string connectionString)
+        public void Initialize(IConfig config)
         {
 
-            Config.SharedDataStore["CLOUDSYNC_FILESERVER_INIT", this] = true;
+            config.SharedDataStore["CLOUDSYNC_FILESERVER_INIT", this] = true;
         }
 
         public void GetFile(string filename, string destination)

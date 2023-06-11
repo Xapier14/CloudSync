@@ -5,7 +5,7 @@ namespace CloudSync
     /// </summary>
     public interface IFileServer
     {
-        public void Initialize(string connectionString);
+        public void Initialize(IConfig config);
         public void GetFile(string filename, string destination);
         public bool HasFile(string filename);
         public void PutFile(string filename, string source);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CloudSync
 {
-    public class SharedDataStore
+    public class SharedDataStore : ISharedDataStore
     {
         private readonly Dictionary<string, object?> _ownership = new();
         private readonly Dictionary<string, object> _data = new();

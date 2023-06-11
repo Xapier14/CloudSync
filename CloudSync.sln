@@ -5,6 +5,18 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSync", "CloudSync\CloudSync.csproj", "{D0B6BC93-CD93-4485-B567-5637D13BFDE3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSync.Cloudinary", "CloudSync.Cloudinary\CloudSync.Cloudinary.csproj", "{E380AED3-9B28-43B8-A665-D19A02642531}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSync.Ftp", "CloudSync.Ftp\CloudSync.Ftp.csproj", "{43AEAE89-EBD7-4C16-9BC6-13CEE5C628BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSync.MongoDb", "CloudSync.MongoDb\CloudSync.MongoDb.csproj", "{9EF26505-1E24-401C-8FA9-B665D80185DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSync.MySql", "CloudSync.MySql\CloudSync.MySql.csproj", "{9BEAB54F-40B1-490A-A2BC-8390A16021B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudSync.Remote", "CloudSync.Remote\CloudSync.Remote.csproj", "{853946F0-FA90-42D4-966F-838E41415C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSync.Common", "CloudSync.Common\CloudSync.Common.csproj", "{59DEB818-D2A9-464D-8030-5FE7E25F1DBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,30 @@ Global
 		{D0B6BC93-CD93-4485-B567-5637D13BFDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0B6BC93-CD93-4485-B567-5637D13BFDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0B6BC93-CD93-4485-B567-5637D13BFDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E380AED3-9B28-43B8-A665-D19A02642531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E380AED3-9B28-43B8-A665-D19A02642531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E380AED3-9B28-43B8-A665-D19A02642531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E380AED3-9B28-43B8-A665-D19A02642531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43AEAE89-EBD7-4C16-9BC6-13CEE5C628BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AEAE89-EBD7-4C16-9BC6-13CEE5C628BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AEAE89-EBD7-4C16-9BC6-13CEE5C628BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AEAE89-EBD7-4C16-9BC6-13CEE5C628BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF26505-1E24-401C-8FA9-B665D80185DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF26505-1E24-401C-8FA9-B665D80185DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF26505-1E24-401C-8FA9-B665D80185DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF26505-1E24-401C-8FA9-B665D80185DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEAB54F-40B1-490A-A2BC-8390A16021B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEAB54F-40B1-490A-A2BC-8390A16021B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEAB54F-40B1-490A-A2BC-8390A16021B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEAB54F-40B1-490A-A2BC-8390A16021B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853946F0-FA90-42D4-966F-838E41415C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853946F0-FA90-42D4-966F-838E41415C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853946F0-FA90-42D4-966F-838E41415C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853946F0-FA90-42D4-966F-838E41415C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DEB818-D2A9-464D-8030-5FE7E25F1DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DEB818-D2A9-464D-8030-5FE7E25F1DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DEB818-D2A9-464D-8030-5FE7E25F1DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DEB818-D2A9-464D-8030-5FE7E25F1DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,7 @@ namespace CloudSync
     [FileServer("cloudinary")]
     public class CloudinaryFileServer : IFileServer
     {
-        public void Initialize(string connectionString)
+        public void Initialize(IConfig config)
         {
             //throw new NotImplementedException();
         }

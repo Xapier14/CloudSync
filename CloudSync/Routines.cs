@@ -21,9 +21,9 @@ namespace CloudSync
 
         }
 
-        public static void RunApp()
+        public static void RunApp(IConfig config)
         {
-            var appPath = Config.LaunchTarget;
+            var appPath = config.LaunchTarget;
             if (!File.Exists(appPath))
             {
                 Console.Error.WriteLine("Launch target could not be found!");

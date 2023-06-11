@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CloudSync.Common\CloudSync.Common.csproj" />
+  </ItemGroup>
+
 </Project>
