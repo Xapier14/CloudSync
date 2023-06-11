@@ -30,8 +30,8 @@ Add cloud saves to any application!
   ```
 
 - Choose your own database and file server types from the included handlers below:
-  - \[DB\] MongoDB (`mongodb`)
-  - \[File Server\] Azure Blob Storage (`azureblob`)
-  - \[File Server\] Cloudinary (`cloudinary`)
+  - ~~\[DB\] MongoDB (`mongodb`)~~
+  - ~~\[File Server\] Azure Blob Storage (`azureblob`)~~
+  - ~~\[File Server\] Cloudinary (`cloudinary`)~~
   - Or use an external plugin.
 - External plugins can be placed in the `./plugins` directory or set via the configuration file.
