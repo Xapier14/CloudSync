@@ -47,8 +47,14 @@ namespace CloudSync
             var dlls = Directory.GetFiles(path, "*.dll");
             foreach (var dll in dlls)
             {
-                var assembly = Assembly.LoadFrom(dll);
-                ProbeAssembly(assembly);
+                try
+                {
+                    var assembly = Assembly.LoadFrom(dll);
+                    ProbeAssembly(assembly);
+                }
+                catch
+                {
+                }
             }
         }
 

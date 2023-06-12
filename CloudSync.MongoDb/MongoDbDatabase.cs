@@ -1,28 +1,29 @@
-namespace CloudSync
+using MongoDB.Driver;
+
+namespace CloudSync;
+
+[Database("mongodb")]
+public class MongoDbDatabase : IDatabase
 {
-    [Database("mongodb")]
-    public class MongoDbDatabase : IDatabase
+    private MongoClient? _client;
+    private IClientSessionHandle? _handle;
+
+    public void Initialize(IConfig config)
     {
-        public void Initialize(IConfig config)
-        {
-            // Initialize the database connection
-            //throw new NotImplementedException();
-        }
+        var mongoUrl = new MongoUrl(config.DatabaseConnectionString);
+        _client = new MongoClient(mongoUrl);
+        _handle = _client.StartSession();
+        var clusterId = _handle.Client.Cluster.ClusterId.Value;
+        Console.WriteLine($"Initialized MongoDB Connection. (ClusterId: {clusterId})");
+    }
 
-        public IReadOnlyList<DataEntry> GetAllEntries()
-        {
-            throw new NotImplementedException();
-        }
+    public void Close()
+    {
+        _handle?.Dispose();
+    }
 
-        public void Close()
-        {
-            // Close the database connection
-            throw new NotImplementedException();
-        }
-
-        public IReadOnlyList<DataEntry> GetAllEntriesFromAppId(string appId)
-        {
-            throw new NotImplementedException();
-        }
+    public IReadOnlyList<DataEntry> GetAllEntriesFromAppId(string appId)
+    {
+        throw new NotImplementedException();
     }
 }

@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CloudinaryDotNet" Version="1.20.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="8.0.0-preview.2.23128.3" />
   </ItemGroup>
 
